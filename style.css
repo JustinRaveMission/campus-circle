@@ -1,10 +1,11 @@
-```css
 /* RESET */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Ink Free", sans-serif !important;
+  font-family: "Ink Free" !important;
   font-weight: bold !important;
 }
 
@@ -23,7 +24,7 @@ body {
   padding: 24px;
 }
 
-/* HERO / WELCOME SECTION */
+/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 35px 0;
@@ -56,8 +57,8 @@ body {
 }
 
 .panel h2 {
-  margin-bottom: 16px;
   color: #365941;
+  margin-bottom: 16px;
 }
 
 /* INPUT FIELDS */
@@ -75,7 +76,7 @@ input {
 }
 
 input::placeholder {
-  font-family: "Ink Free", sans-serif !important;
+  font-family: "Ink Free" !important;
   font-weight: bold !important;
   color: #8a968b;
   opacity: 1;
@@ -152,6 +153,7 @@ a:focus-visible {
   margin-bottom: 10px;
 }
 
+/* DASHBOARD CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -159,7 +161,6 @@ a:focus-visible {
   margin: 20px 0;
 }
 
-/* DASHBOARD CARDS */
 article {
   background: #edf3e9;
   padding: 16px;
@@ -195,7 +196,7 @@ footer {
   display: none !important;
 }
 
-/* FADE-IN ANIMATION */
+/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -208,7 +209,7 @@ footer {
   }
 }
 
-/* MOBILE RESPONSIVE DESIGN */
+/* MOBILE RESPONSIVE */
 @media (max-width: 480px) {
   .container {
     padding: 16px;
@@ -235,7 +236,7 @@ footer {
   }
 }
 
-/* REDUCE ANIMATIONS IF REQUESTED BY DEVICE */
+/* REDUCE ANIMATIONS WHEN REQUESTED BY DEVICE */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -245,4 +246,3 @@ footer {
     scroll-behavior: auto !important;
   }
 }
-```
